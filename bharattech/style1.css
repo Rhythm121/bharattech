@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+  font-size: 22px;
+ margin: 5px;
+ font-family: nunito,sans-serif;
+}
+
+
+
+
+.logo img{
+    width: 33px; 
+    display:flex;
+    border: 3px solid whitesmoke;
+    border-radius: 50px;
+    margin-right: auto;
+ 
+   
+}
+.navbar{
+    
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    position:sticky;
+    top:0;
+    cursor: pointer;
+
+ 
+   
+   
+
+}
+.container1{
+  position:fixed;
+  top:0;
+ 
+  width:100%;
+  height:50px;
+  
+}
+.container1 ul{
+  list-style-type:none;
+  padding:0;
+}
+
+.container1 ul li{
+  display:inline-block;
+  width:100px;
+  color:rgb(255, 254, 254);
+}
+
+.black{
+  position:fixed;
+  top:0;
+  background:rgb(0, 0, 0);
+  width:100%;
+  height:50px;
+}
+
+
+
+
+
+
+.nav-list {
+    width:50%;
+    display: flex;
+    padding-left: 50px;
+    
+   
+    
+
+}
+.nav-list li {
+    list-style-type: none;
+    padding: 20px 30px;
+
+}
+.nav-list li a {
+text-decoration: none;
+color: rgb(255, 255, 255);
+}
+
+.nav-list li a:hover{
+   
+color: grey;
+   
+
+}
+
+.rightNav{
+    width:50%;
+    text-align: right;
+    padding: 0px 50px;
+}
+
+.left{
+    display: flex;
+    
+    width: 250px;
+    height:50px;
+
+
+}
+.right{
+    display: flex;
+    padding-left: 400px;
+}
+.container2{
+   padding-left: 50px;
+    display: flex;
+    width: 30px;
+    height: 70px;
+    background-image: url('https://www.txon.in/assets/img/TXON-LOG.png');
+    background-size:cover;
+   
+    
+   
+
+
+}
+.p{
+   padding-top: 38px; 
+   font-size: 30px;
+   color: white;
+   padding-left: 20px;
+   font-style: normal;
+   font-stretch: 2px;
+}
+
+    
+    .water{
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        /* background: #3586ff; */
+        background:  #6222e2d1;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .water .wave{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100px;
+        background: url('http://front-end-noobs.com/jecko/img/wave-mid.png');
+        background-size: 1000px 100px;
+      }
+      .water .wave.wave1{
+        animation: animate 30s linear infinite;
+        z-index: 1;
+        opacity: 1;
+        animation-delay: 0s;
+        bottom: 0;
+      }
+      .water .wave.wave2{
+        animation: animate2 15s linear infinite;
+        z-index: 999;
+        opacity: 0.5;
+        animation-delay: -5s;
+        bottom: 10px;
+      }
+      .water .wave.wave3{
+        animation: animate 30s linear infinite;
+        z-index: 998;
+        opacity: 0.2;
+        animation-delay: -2s;
+        bottom: 15;
+      }
+      
+      .water .wave.wave4{
+        animation: animate 5s linear infinite;
+        z-index: 997;
+        opacity: 0.7;
+        animation-delay: -5s;
+        bottom: 20px;
+      }
+      
+      @keyframes animate{
+      0%{
+      background-position-x: 0;
+      }
+      100%{
+      background-position-x: 1000px;
+      }
+      }
+      .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    #hero {
+        width: 100%;
+        height: 80vh;
+        /* background-color: #000; */
+        background: #6222e2d1;
+      }
+      
+      #hero .container {
+        padding-top: 72px;
+      }
+      
+      #hero h1 {
+        margin: 0 0 10px 0;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+        color: #ffffff;
+      }
+      
+      #hero h2 {
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 50px;
+        font-size: 24px;
+      }
+      
+      #hero .btn-get-started {
+        background: linear-gradient(97.83deg, #B326CA 14.98%, #4200FF 103.58%);
+        box-shadow: 9px 8px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 10px 28px 11px 28px;
+        border-radius: 50px;
+        transition: 0.5s;
+        margin: 10px 0 0 0;
+        color: #61095a;
+        /* background: #47b2e4; */
+      animation: anim1 6s;
+      }
+      
+      #hero .btn-get-started:hover {
+        background: #EEEB18;
+        color:black;
+        box-shadow:0px 20px 40px #EEEB18;
+      }
+      
+      @keyframes anim1 {
+        0% {
+          transform: translateY(50%);
+        }
+      
+        100% {
+          transform: translateY(-50%);
+        }
+      }
+      
+      @keyframes anim1 {
+        100% {
+          transform: translateY(-50%);
+        }
+      
+        0% {
+          transform: translateY(50%);
+        }
+      }
+      
+      
+      #hero .animated {
+        animation: up-down 2s ease-in-out infinite alternate-reverse both;
+      }
+      
+      @media (max-width: 991px) {
+        #hero {
+          height: 100vh;
+          text-align: center;
+        }
+      
+        #hero .animated {
+          -webkit-animation: none;
+          animation: none;
+        }
+      
+        #hero .hero-img {
+          text-align: center;
+        }
+      
+        #hero .hero-img img {
+          width: 50%;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        #hero h1 {
+          font-size: 28px;
+          line-height: 36px;
+        }
+      
+        #hero h2 {
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 30px;
+        }
+      
+        #hero .hero-img img {
+          width: 70%;
+        }
+      }
+      
+      @media (max-width: 575px) {
+        #hero .hero-img img {
+          width: 80%;
+        }
+      
+        #hero .btn-get-started {
+          font-size: 16px;
+          padding: 10px 24px 11px 24px;
+        }
+      }
+      
+      @-webkit-keyframes up-down {
+        0% {
+          transform: translateY(10px);
+        }
+      
+        100% {
+          transform: translateY(-10px);
+        }
+      }
+      
+      @keyframes up-down {
+        0% {
+          transform: translateY(10px);
+        }
+      
+        100% {
+          transform: translateY(-10px);
+        }
+      }
+.img-fluid{
+ width :500px;
+ height:600px;
+ padding-left: 700px;
+ 
+      }
+  .abtin{
+   align-items: left;
+    display: flex;
+    flex-direction: column;
+    font-style: bold;
+    font-size: 20px;
+
+    
+   }
+   .abtin1{
+    align-items: left;
+     display: flex;
+     flex-direction: column;
+     font-style: bold;
+     font-size: 18px;
+ 
+     
+    }
+   .abtright{
+    align-items: left;
+   }
+
+   .glow {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #76a9fb, 0 0 20px #a193ea, 0 0 30px #5c1c54, 0 0 40px #d910dc8f, 0 0 50px #960950;
+    }
+    to {
+      text-shadow: 0 0 10px #8e9bf4, 0 0 30px #9eaff5, 0 0 40px #d313c0, 0 0 50px #e71bdd, 0 0 60px #df27d5;
+    }
+  }
